@@ -76,6 +76,13 @@ var List = (function () {
         }
         return index;
     };
+    List.prototype.Remove = function (item) {
+        if (item != undefined) {
+            var idx = this.IndexOf(item);
+            if (idx >= 0)
+                this.RemoveAt(idx);
+        }
+    };
     List.prototype.RemoveAt = function (index) {
         if (!isNaN(index) && index >= 0 && index < this.Items.length && this.Items.length > 0) {
             var idx = index - (index % 1);
@@ -90,3 +97,11 @@ var List = (function () {
     };
     return List;
 }());
+var list = new List();
+var obj = {
+    name: 'Ricardo'
+};
+list.Add(obj);
+console.log(list.Items);
+list.Remove(obj);
+console.log(list.Items);
