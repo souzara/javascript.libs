@@ -97,11 +97,4 @@ var List = (function () {
     };
     return List;
 }());
-var list = new List();
-var obj = {
-    name: 'Ricardo'
-};
-list.Add(obj);
-console.log(list.Items);
-list.Remove(obj);
-console.log(list.Items);
+
