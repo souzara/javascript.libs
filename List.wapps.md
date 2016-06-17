@@ -52,6 +52,7 @@ Encontrar elemento na lista
 
 Encontra index de um elemento na lista
   obs: este metodo transforma os objetos em json para comparação, para objetos complexos pode consumir demasiado recursos.
+	
 	var obj = {
 	   name: 'Lucas', 
 	   age: 23
@@ -62,6 +63,7 @@ Encontra index de um elemento na lista
 	console.log(index);//saida igual a  1
 
 Remover item da lista apartir de um item 
+	
 	var obj = {
 	   name: 'Lucas', 
 	   age: 23
